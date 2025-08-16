@@ -1,5 +1,6 @@
 #!/bin/bash
 
+# Create a directory for the bonus round
 mkdir -p Bonus_Round
 for i in {1..5}; do
     lines=$((RANDOM % 11 + 10))
@@ -16,6 +17,7 @@ done
 echo "Files sorted by size:"
 ls -lhS Bonus_Round/file*.txt
 
+# Create an Archives directory and move files containing the word "Archive"
 mkdir -p Archives
 for f in Bonus_Round/file*.txt; do
     if grep -q 'Archive' "$f"; then
