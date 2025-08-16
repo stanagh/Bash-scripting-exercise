@@ -19,4 +19,4 @@ fswatch -r "$DIR" | while read event; do
 done    
 
 # This script monitors changes in the specified directory and logs file changes or deletions with timestamps.
-# Fswatch is used to detect changes (but not currently installed in the environment / working).
+# Fswatch is used to detect changes (but not currently installed in the environment / not working).
